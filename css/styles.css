@@ -1,0 +1,206 @@
+:root {
+  --primary-text-color-theme-light: #434455;
+  --secondary-text-color-theme-light: #2e2f42;
+  --primary-text-color-theme-dark: #ffffff;
+  --secondary-text-color-theme-dark: #f4f4fd;
+  --logo-color: #4d5ae5;
+  --accent-color: #404bbf;
+  --batton-background-theme-dark: #4d5ae5;
+  --batton-background-accent: #404bbf;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+
+/* ==================================COMPONENTS=============================== */
+
+.secondary-title {
+   font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.photo-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.photo-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-text-color-theme-light);
+}
+
+/* ==================================/COMPONENTS=============================== */
+
+/* ==================================HEADER=============================== */
+/* Logotype */
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+}
+
+.logo-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+
+.logo-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.menu-link {
+  font-weight: 500;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+/* Акцент на посилання на активну сторінку */
+.menu .menu-link.link.current {
+  color:var(--accent-color);
+}
+
+/* Contacts */
+
+.address {
+  font-style: normal;
+}
+
+.contact-link {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-text-color-theme-light);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* ==================================/HEADER=============================== */
+
+/* ====================================HERO================================ */
+
+.hero {
+  background-color: var(--secondary-text-color-theme-light);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--primary-text-color-theme-dark);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Button */
+.modal-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-text-color-theme-dark);
+  background: var(--batton-background-theme-dark);
+  cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--batton-background-accent);
+}
+
+/* ====================================/HERO================================ */
+
+/* ================================OUR ADVANTAGES============================ */
+
+.advantage-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.advantage-text {
+   color: var(--primary-text-color-theme-light);
+}
+
+/* ================================/OUR ADVANTAGES============================ */
+
+/* ===============================WHAT ARE WE DOING=========================== */
+
+/* ==============================/WHAT ARE WE DOING=========================== */
+
+/* ====================================OUR TEAM=============================== */
+
+.team {
+  background-color: #F4F4FD;
+}
+
+.team-item {
+  background-color: #FFFFFF;
+}
+
+/* ===================================/OUR TEAM=============================== */
+
+/* =====================================FOOTER================================ */
+
+.page-footer {
+  background-color: var(--secondary-text-color-theme-light);
+}
+
+.footer-text {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+/* =====================================/FOOTER================================ */
+
+/* =====================================FILTER================================ */
+
+.filter-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--logo-color);
+  background: var(--secondary-text-color-theme-dark);
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background: var(--batton-background-accent);
+}
+
+/* =====================================FILTER================================ */
