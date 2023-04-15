@@ -97,8 +97,6 @@ body {
 /* ==================================HEADER=============================== */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 23px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -143,15 +141,12 @@ body {
 }
 
 .menu-link {
+  display: inline-block;
   font-weight: 500;
   color: var(--secondary-text-color-theme-light);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-
-/* Рекомендувавв зробити Олександр Репета, щоб збільшити область посилань, але в ТЗ сказано, що робити, згідно макета.
-.menu-link {
-    padding-top: ;
-    padding-bottom: ;
-} */
 
 .menu-link:hover,
 .menu-link:focus {
@@ -171,11 +166,13 @@ body {
 
 .contacts {
   display: flex;
+  gap: 40px;
 }
 
+/* Метод Олександра Репети - автоперевірка не пропустила
 .contact-item + .contact-item {
   margin-left: 40px;
-}
+} */
 
 .contact-link {
   font-style: normal;
@@ -209,11 +206,13 @@ body {
   color: var(--primary-text-color-theme-dark);
   letter-spacing: 0.02em;
   margin: 0 auto 48px;
-  width: 496px;
+  max-width: 496px;
 }
 
 /* Button */
 .modal-btn {
+  display: block;
+  margin: 0 auto;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -255,6 +254,10 @@ body {
   display: flex;
 }
 
+.advantages .item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
 .advantages .item:not(:last-child) {
   margin-right: 24px;
 }
@@ -281,6 +284,8 @@ body {
 
 .team-item {
   background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team .list {
@@ -289,14 +294,16 @@ body {
 
 .team-item:not(:last-child) {
   margin-right: 24px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+}
+
+.team .photo-title {
+  margin-bottom: 8px;
 }
 
 .employees-card-content {
   padding: 32px 16px;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* ===================================/OUR TEAM=============================== */
@@ -312,6 +319,11 @@ body {
 .footer-text {
   color: var(--secondary-text-color-theme-dark);
   width: 264px;
+}
+
+.page-footer .logotype {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* =====================================/FOOTER================================ */
@@ -354,28 +366,30 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: none;
+  border: 1px solid transparent;
 }
 
 .filter .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -24px;
-  margin-top: -48px;
+  column-gap: 24px;
+  row-gap: 48px;
+  /* margin-left: -24px;
+  margin-top: -48px; */
 }
 
 .filter .card-item {
-  margin-left: 24px;
-  margin-top: 48px;
+  width: calc((100% - 48px) / 3);
+  /* margin-left: 24px;
+  margin-top: 48px; */
   /* flex-basis: calc(100% / 3 - 24); - задаємо,
     коли не вказуємо розмір у розмітці */
 }
 
 .filter .card-content {
   padding: 32px 16px;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .filter .photo-title {
