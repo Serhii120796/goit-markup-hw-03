@@ -85,11 +85,11 @@ body {
 }
 
 .section {
-  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.section:nth-child(n + 3) {
-  padding-bottom: 120px;
+.section:nth-child(2n) {
+  padding-top: 120px;
 }
 
 /* ==================================/COMPONENTS=============================== */
