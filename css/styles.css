@@ -18,8 +18,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
-  /* Пізніше витерти */
-  /* outline: 2px solid orange; */
+
 }
 
 ul {
@@ -28,8 +27,7 @@ ul {
 
 img {
   display: block;
-  /* Пізніше витерти */
-  /* outline: 2px solid orangered; */
+
   /* max-width: 100%; - задаємо, коли не вказуємо розмір у розмітці*/
 }
 
@@ -54,8 +52,6 @@ body {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  /* Пізніше витерти */
-  /* outline: 2px solid black; */
 }
 
 /* ==================================COMPONENTS=============================== */
@@ -90,6 +86,20 @@ body {
 
 .section:nth-child(2n) {
   padding-top: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ==================================/COMPONENTS=============================== */
@@ -194,11 +204,6 @@ body {
   text-align: center;
   padding: 188px 0;
 }
-
-/* Padding вказали у секції вище */
-/* .hero .container {
-  padding: 188px 0;
-} */
 
 .hero-title {
   font-size: 56px;
